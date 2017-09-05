@@ -1,0 +1,20 @@
+{
+  "name": "personal-site",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://kat.cafe",
+  "dependencies": {
+    "gh-pages": "^1.0.0",
+    "inferno": "^3.8.2",
+    "inferno-component": "^3.8.2",
+    "inferno-scripts": "4.2.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
+  }
+}
