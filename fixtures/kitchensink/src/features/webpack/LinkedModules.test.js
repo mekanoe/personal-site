@@ -7,19 +7,19 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
-import Inferno from 'inferno';
-import InfernoDOM from 'inferno-dom';
-import { test, version } from 'test-integrity';
-import LinkedModules from './LinkedModules';
+import Inferno from 'inferno'
+import InfernoDOM from 'inferno-dom'
+import { test, version } from 'test-integrity'
+import LinkedModules from './LinkedModules'
 
 describe('linked modules', () => {
   it('has integrity', () => {
-    expect(test());
-    expect(version() === '2.0.0');
-  });
+    expect(test())
+    expect(version() === '2.0.0')
+  })
 
   it('renders without crashing', () => {
-    const div = document.createElement('div');
-    InfernoDOM.render(<LinkedModules />, div);
-  });
-});
+    const div = document.createElement('div')
+    InfernoDOM.render(<LinkedModules />, div)
+  })
+})

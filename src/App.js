@@ -1,23 +1,34 @@
-import { version } from 'inferno';
-import Component from 'inferno-component';
-import './registerServiceWorker';
-import Logo from './logo';
-import './App.css';
+import Component from 'inferno-component'
+import './registerServiceWorker'
+import Background from './Background'
+import About from './About'
+import Twitch from './Twitch'
+import GitHub from './GitHub'
+import './App.css'
 
 class App extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      ready: false
+    }
+  }
+  componentDidMount () {
+    setTimeout(() => {
+      this.setState({ ready: true })
+    }, 1000)
+  }
+  render () {
     return (
-      <div className="App">
-        <div className="App-header">
-          <Logo width="80" height="80" />
-          <h2>{`Welcome to Inferno ${version}`}</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className='App fs'>
+        <Background ready={this.state.ready} />
+        <About />
+        <Twitch />
+        <GitHub />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
