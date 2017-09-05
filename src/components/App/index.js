@@ -1,9 +1,9 @@
 import Component from 'inferno-component'
 import './registerServiceWorker'
-import Background from './Background'
-import About from './About'
-import Twitch from './Twitch'
-import GitHub from './GitHub'
+import Background from '../Background'
+import About from '../About'
+import Twitch from '../Twitch'
+import GitHub from '../GitHub'
 import './App.css'
 
 class App extends Component {

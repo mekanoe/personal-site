@@ -1,6 +1,28 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  background-color: #000c09;
+  color: #fefefe;
   font-family: "Fira Sans", "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  padding-bottom: 2em;
+}
+
+.box {
+  background-color: rgba(30,30,30,0.7);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 20px;
+  position: relative;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+
+@media only screen and (max-width: 1440px) {
+  .box {
+    max-width: 960px;
+  }
+}
+
+div {
+  box-sizing: border-box;
 }

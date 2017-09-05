@@ -7,9 +7,12 @@
     "gh-pages": "^1.0.0",
     "inferno": "^3.8.2",
     "inferno-component": "^3.8.2",
-    "inferno-scripts": "4.2.0"
+    "inferno-scripts": "4.2.0",
+    "standard": "^10.0.3",
+    "superagent": "^3.6.0"
   },
   "scripts": {
+    "fix": "standard --fix",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "inferno-scripts start",

@@ -1,0 +1,81 @@
+.pushdown {
+    height: 1em;
+}
+
+.title {
+    font-size: 2em;
+    /* overflow: hidden;
+    overflow-clip-box: content-box; */
+    height: 1.7em;
+    width: 100%;
+    /* display: flex; */
+    position: relative;
+    /* display: inline-block; */
+    z-index: 2;
+}
+
+.title div {
+    position: relative;
+    /* text-align: right;  */
+    /* width: 475px; */
+}
+
+.line {
+    position: absolute;
+    background-color: #efefef;
+    background: radial-gradient(center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 3px;
+    /* width: 880px; */
+    top: 50%;
+    margin: 0 auto;
+}
+
+.crossbox-right, .crossbox-left {
+    /* overflow: hidden; */
+    position: relative;
+    display: inline;
+
+}
+
+/* bottom jp */
+.crossbox-right {
+    /* clip-path: polygon(100% 50%, 100% 0, 0 0, 0 50%); */
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    transform: translateX(-8px);
+    color: #000000;
+    background-color: #efefef;
+    left: -10px;
+    animation: cbright 1s ease-out 1s 1 forwards;    
+}
+
+/* top en */
+.crossbox-left {
+    /* clip-path: polygon(100% 53%, 100% 100%, 0 100%, 0 53%);     */
+    /* clip-path: polygon(100% 100%, 84% 0, 0 0, 0 100%); */
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);    
+    transform: translateX(8px);
+    color: #efefef;
+    background-color: #000;
+    left: 10px;
+    z-index: 2;
+    animation: cbleft 1s ease 1s 1 forwards;
+}
+
+@keyframes cbleft {
+    0% {
+        clip-path: polygon(100% 100%, 0 0, 0 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(100% 100%, 84% 0, 0 0, 0 100%);
+    }
+}
+
+@keyframes cbright {
+    0% {
+        clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    }
+    
+    100% {
+        clip-path: polygon(100% 100%, 100% 0, 0 0, 16% 100%);
+    }
+}
