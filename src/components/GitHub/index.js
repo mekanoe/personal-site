@@ -38,9 +38,9 @@ export default class GitHub extends Component {
   }
 }
 
-const Repo = ({ data: {name, url, language, stargazers_count, forks, description} }) => {
+const Repo = ({ data: {name, html_url, language, stargazers_count, forks, description} }) => {
   return (
-    <a href={url} className='repo'>
+    <a href={html_url} className='repo'>
       <span className='jpa repo-name repo-inf'>{name}</span>
       <p className='repo-inf'>{description}</p>
       <div className='repo-bottom'>
