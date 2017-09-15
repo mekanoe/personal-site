@@ -20,3 +20,68 @@
 code {
   color: #e73a37;
 }
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+a.hero-scroll {
+  position: absolute;
+  bottom: 70px;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.5s ease-out;
+}
+
+.hero-scroll-flair {
+  position: absolute;
+  bottom: 60px;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  padding: 10px;
+  color: transparent;
+  animation: scrolltext 4s ease-in-out 1.5s forwards;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: opacity 0.5s ease-out;
+}
+
+.hero-scroll.hidden, .hero-scroll-flair.hidden {
+  opacity: 0;
+  /* display: none;   */
+}
+
+.hero-scroll-flair.staged {
+  /* display: none; */
+}
+
+@keyframes scrolltext {
+  0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  50% {
+      clip-path: polygon(10% 10%, 0% 0, 0 0%, 0% 0%);
+  }
+
+  100% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  }
+}
+
+.lower-content {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.lower-content.hidden {
+  display: none;
+}
+
+.lower-content.staged {
+  opacity: 0;
+  /* display: none;   */
+}

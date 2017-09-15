@@ -3,7 +3,7 @@
 }
 
 .title {
-    font-size: 2em;
+    font-size: 4em;
     /* overflow: hidden;
     overflow-clip-box: content-box; */
     height: 1.7em;
@@ -12,7 +12,9 @@
     position: relative;
     /* display: inline-block; */
     z-index: 2;
+    transform: translateZ(0);
 }
+
 
 .title div {
     position: relative;
@@ -34,18 +36,19 @@
     /* overflow: hidden; */
     position: relative;
     display: inline;
-
+    transform: translateZ(0);
 }
 
 /* bottom jp */
 .crossbox-right {
     /* clip-path: polygon(100% 50%, 100% 0, 0 0, 0 50%); */
     clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
-    transform: translateX(-8px);
+    /* transform: translateX(-100px); */
     color: #000000;
     background-color: #efefef;
-    left: -10px;
-    animation: cbright 1s ease-out 1s 1 forwards;    
+    left: -20px;
+    animation: cbright 1s ease-in-out 0.3s 1 forwards;
+    /* overflow: hidden; */
 }
 
 /* top en */
@@ -53,12 +56,12 @@
     /* clip-path: polygon(100% 53%, 100% 100%, 0 100%, 0 53%);     */
     /* clip-path: polygon(100% 100%, 84% 0, 0 0, 0 100%); */
     clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);    
-    transform: translateX(8px);
+    /* transform: translateX(8px); */
     color: #efefef;
     background-color: #000;
-    left: 10px;
+    left: 20px;
     z-index: 2;
-    animation: cbleft 1s ease 1s 1 forwards;
+    animation: cbleft 1s ease-in-out 0.3s 1 forwards;
 }
 
 @keyframes cbleft {
@@ -66,7 +69,7 @@
         clip-path: polygon(100% 100%, 0 0, 0 0, 0 0);
     }
     100% {
-        clip-path: polygon(100% 100%, 84% 0, 0 0, 0 100%);
+        clip-path: polygon(100% 100%, 87% 0, 0 0, 0 98%);
     }
 }
 
@@ -76,6 +79,20 @@
     }
     
     100% {
-        clip-path: polygon(100% 100%, 100% 0, 0 0, 16% 100%);
+        clip-path: polygon(100% 100%, 100% 0, 0 0, 13% 100%);
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .title {
+      font-size: 2em;
+    }
+
+    .crossbox-left {
+        left: 10px;
+    } 
+    
+    .crossbox-right {
+        left: -10px;
     }
 }
