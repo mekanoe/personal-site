@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "next/babel", "@babel/preset-flow"
+  ],
+  "plugins": [
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-class-properties",
+      ["@babel/plugin-transform-runtime",
+        { "helpers": false }],
+      [ "styled-components", { "ssr": true } ],
+      "@babel/plugin-proposal-optional-chaining"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["next/babel", {"preset-env": {"modules": "commonjs"}}]
+      ]
+    }
+  }
+}

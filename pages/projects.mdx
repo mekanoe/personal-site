@@ -1,0 +1,159 @@
+import Gfy from '../components/gfy'
+import Yt from '../components/yt'
+import Link from 'next/link'
+
+# my projects
+
+here's all the stuff i've worked on that i'm generally proud of. i wish i had more here, but...
+
+## showcase
+
+### roleypoly
+
+- https://roleypoly.com 
+- https://beta.roleypoly.com
+- https://github.com/kayteh/roleypoly
+
+a discord bot to help server members assign theirselves roles without using bot commands.
+
+*stack: next.js, react, redux (fast-redux), styled-components, flow, koa, eris, postgres*
+
+i use this as a self-benchmark project. it is my pride and joy.
+
+<Gfy id='AngelicSeriousDassierat' />
+
+---
+### Unity Shaders
+
+- https://github.com/kayteh/shaders
+
+i spend a lot of time in VRChat, so i eventually just started writing the only
+sort of code that game really accepts, shaders. i'm not math-heavy enough to
+be amazing at this, but here's a small showcase.
+
+*sparkles*
+<Gfy id='PartialPastelArabianoryx' />
+
+*anime water for an unfinished vr game*
+<Gfy id='thoroughunfinishedgazelle' />
+
+*rave-ish scrolling emission*
+<Gfy id='thindentalheifer' />
+
+*animated eye emotes*
+<Gfy id='pleasingannualhornbill' />
+
+---
+### DBOX
+
+- https://github.com/kayteh/DBOX
+
+a planetside 2 match scorekeeping overlay.  
+no one with actual web dev experience had made any event overlay
+systems for events outside of server smash, this was tuned for harasser derby,
+but it could be repurposed for a lot of things eventually, if i continued it.
+
+had the ability to time travel the score events so recordings without the overlay could get them afterwards.
+
+was one of the only event scorekeeping systems that used a central server to keep score, for some reason.
+
+*stack: react, redux, socket.io, rethinkdb*
+
+<Gfy id='MetallicLinedCrane' />
+
+---
+### LibertyRP
+
+- https://github.com/kayteh/liberty-gta5
+
+a very complicated MMO-style architecture mod for the now-defunct GTA5 multiplayer mod platform, GTA: Network.
+
+the amount of limitations this platform gave me created some very interesting scenarios
+
+maintaining security and scalability required roundabout thoughtwork, the incumbent way was to pass client->server data in the platform itself.
+this doesn't actually lend itself well to scalabilty concerns; but the platform does allow external URLs to be loaded for UI work.
+so, in order to talk to the client, client talked to an app server, which had RPC ability into the game server, which could pass events back to clients.
+this sounds common-sense and roundabout to a reader, but game modders are kinda...
+
+*phone UI timelapse sample*
+<Yt id='w7MNjcmI8ko'/>
+
+*web server controlled cam rig*
+<Yt id='xjTJuOAvWPY' />
+
+*a very long rundown of the architecture*
+<Yt id='d7D8e3mTzYI' />
+
+*stack: c#, node, vue, postgres*
+
+## other stuff of note
+
+this isn't all that visually special to me at all.. sometimes it doesn't even have visuals!
+
+- **this site**
+  - https://github.com/kayteh/personal-site
+  - the thing you're looking at.
+  - next.js + mdx = <3
+
+- **toys**
+  - https://github.com/kayteh/toys
+  - shitty toys to learn stuff with, see <Link href="/toys"><a>here</a></Link>
+
+- **medkit**
+  - https://github.com/genudine/medkit-bot
+  - extremely modular discord bot
+
+- **restokit**
+  - https://github.com/kayteh/restokit
+  - golang, fasthttp + fasthttprouter + middleware + codegen. for the lazy.
+
+- **electron-openvr**
+  - https://github.com/kayteh/electron-openvr
+  - https://github.com/kayteh/electron-openvr-sample
+  - https://github.com/kayteh/node-openvr
+  - Electron to OpenVR bridge for overlays and such. includes some node-openvr improvements and stuff, although unfinished.
+
+- **dqrack**
+  - https://github.com/kayteh/dqrack
+  - imagine forcing unknown/arbitrary data structs into a graph database with go
+
+- **esi**
+  - https://github.com/kayteh/esi
+  - a very simple image encoding suite for databending/glitch art.
+
+- **pylon**
+  - https://github.com/kayteh/pylon
+  - completely unfinished and scrapped project for doing WAL-like things to redis.
+
+- **save.gg**
+  - https://github.com/kayteh/save.gg
+  - a scrapped game save syncing and sharing service written in go.
+
+- **reachability tester**
+  - https://github.com/kayteh/reachability-tester
+  - dependencyless subnet reachability tester in go
+
+- **GTA: Network**
+  - https://github.com/GTANetworkDev/platform
+  - https://github.com/kayteh/platform/tree/dev-katalina-jspass/Client/Javascript
+  - assisted on network sync and client JS overhaul, but never finished due to project EOL.
+
+- **float**
+  - https://github.com/kayteh/float
+  - building a serverless architecture for learning and science.
+
+- **gfx-adventures**
+  - https://github.com/kayteh/gfx-adventures
+  - learning OpenGL.. but actually just hacking GLSL.
+
+- **skyfish**
+  - https://github.com/kayteh/skyfish
+  - unfinished client-agnostic game patching system
+
+- **graylog-drone**
+  - https://github.com/playerme/graylog-drone
+  - graylog forwarder but in go instead of java
+
+- **ansible forge**
+  - https://github.com/playerme/ansible-forge
+  - a very old ansible task runner. the final version of this didn't make it to github.

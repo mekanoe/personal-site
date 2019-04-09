@@ -1,23 +1,37 @@
 {
-  "name": "personal-site",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://kat.cafe",
-  "dependencies": {
-    "gh-pages": "^1.0.0",
-    "inferno": "^3.8.2",
-    "inferno-component": "^3.8.2",
-    "inferno-scripts": "4.2.0",
-    "standard": "^10.0.3",
-    "superagent": "^3.6.0"
-  },
+  "name": "create-next-example-app",
   "scripts": {
-    "fix": "standard --fix",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "inferno-scripts start",
-    "build": "inferno-scripts build",
-    "test": "inferno-scripts test --env=jsdom",
-    "eject": "inferno-scripts eject"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^0.20.3",
+    "@next/mdx": "^8.0.4",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.16.0",
+    "standard": "^12.0.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.6.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
