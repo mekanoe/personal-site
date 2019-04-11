@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "img-gen": "./bin/img-gen ./static/base.png ./pages/words/*",
+    "img-gen:build": "mkdir -p bin; go generate ./bin/img-gen/... && go build -o ./bin/img-gen ./lib/img-gen"
   },
   "dependencies": {
     "@mdx-js/loader": "^0.20.3",
