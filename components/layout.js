@@ -53,7 +53,7 @@ const ContentBox = styled.div`
     color: #ef7575;
     text-decoration-color: transparent;
     transition: 0.3s ease-in-out;
-    
+
     :hover {
       text-shadow: 0 0 1px var(--bg-p);
       text-decoration-color: #ef7575;
@@ -61,10 +61,56 @@ const ContentBox = styled.div`
   }
 `
 
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`
+
+const Footer = styled.div`
+  font-size: 0.8em;
+  padding: 0.4rem 0;
+  text-align: right;
+  color: hsl(0, 0%, 50%);
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+
+    &:hover {
+      color: white;
+      text-shadow: 0 0 1px black;
+    }
+  }
+`
+
+const Flags = styled.img`
+  max-height: 1em;
+`
+
+const year = (() => {
+  return (new Date()).getFullYear()
+})()
+
 export default ({ children }) => <Wrapper>
   <BottomBG />
   <Header />
   <ContentBox>
     {children}
   </ContentBox>
+  <FooterContainer>
+    <Footer>
+      <Flags src='/static/flags.svg' />&nbsp;
+      © {year} katalina t. ♡&nbsp;
+      <a href='https://creativecommons.org/licenses/by/4.0/'>CC-BY 4.0</a>&nbsp;unless otherwise licensed.
+    </Footer>
+  </FooterContainer>
 </Wrapper>
