@@ -943,10 +943,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@next/mdx@^8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-8.0.4.tgz#1b18e5469b625121834bda4acf7d909fa9b65888"
-  integrity sha512-S0PiUSR1jHwLim3e11K8KFan4NAsvQr8jC/QQpkPTShhZfwje7dOAnUWwAM9P0zQqqK803YzR2KB2oP6KM1vjA==
+"@next/mdx@^9.1.6":
+  version "9.1.6"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-9.1.6.tgz#34c40a60811b6ec5f13613e31e8fd5622d82b938"
+  integrity sha512-0wsmd1JOri51uZwpKDC0m7i4w/4DHlMveyxCJUBaP3dV3Qc3/FIHbfcOwFXTIy58rLzD1gI8PmYMZaefr7+O2Q==
 
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
