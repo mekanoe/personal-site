@@ -8,7 +8,7 @@
     "img-gen:build": "mkdir -p bin; go generate ./bin/img-gen/... && go build -o ./bin/img-gen ./lib/img-gen"
   },
   "dependencies": {
-    "@mdx-js/loader": "^0.20.3",
+    "@mdx-js/loader": "^1.6.19",
     "@next/mdx": "^8.0.4",
     "next": "^8.0.4",
     "react": "^16.8.6",
