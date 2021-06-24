@@ -42,6 +42,7 @@ main {
 }
 
 .name {
+  line-height: normal;
   font-size: 30rem;
   transition: all 1s ease-in-out;
   text-shadow: -4px -4px 0 #f0f, -8px -8px 0 #0ff, -12px -12px 0 #ff0,
