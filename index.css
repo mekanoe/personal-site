@@ -37,6 +37,11 @@ main,
     transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) perspective(4cm);
   }
 
+  .lmao main,
+  .lmao .viz {
+    animation: lmao 30s ease-in-out infinite alternate;
+  }
+
   .viz .box {
     box-shadow: inset -4px -4px 2px rgb(27, 27, 27),
       inset 4px 4px 2px rgb(27, 27, 27), 5px 5px 10px rgb(27, 27, 27);
@@ -198,6 +203,7 @@ h1 {
   color: #efefef;
   text-shadow: 3px 3px 1px black, -1px -1px 1px rgb(102, 102, 102);
   animation: calm 3s ease-in-out infinite alternate;
+  cursor: pointer;
 }
 
 .score,
@@ -293,5 +299,17 @@ h1 {
 
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes lmao {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) perspective(4cm);
+  }
+  100% {
+    transform: rotateX(-45deg) rotateY(90deg) rotateZ(-45deg) perspective(10cm);
   }
 }
