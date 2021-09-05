@@ -31,6 +31,10 @@ main {
     transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg) perspective(4cm)
       translateX(-25vw);
   }
+
+  .too-small {
+    display: none;
+  }
 }
 
 a {
@@ -71,4 +75,12 @@ a:hover {
 
 h1 {
   animation: rainbow infinite 4s;
+}
+
+.too-small {
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
+  font-size: 0.5em;
+  color: #efefef;
 }
