@@ -53,7 +53,7 @@ main,
 }
 
 a {
-  color: gold;
+  color: rgb(79, 146, 177);
   text-decoration: none;
   position: relative;
   transition: color 0.15s ease-in-out;
