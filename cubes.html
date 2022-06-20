@@ -1,0 +1,223 @@
+<!DOCTYPE html public "im a fucking fox">
+<meta charset="utf-8" />
+<title>okano but as a cube</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+  integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="cubes.css" />
+<div>
+  <header>
+    <h1>i can't have a problem</h1>
+    <p>...since i solve puzzles all the time :)</p>
+    <p>
+      i'm not a pro cuber, and won't be setting any records, but i sure do love
+      cubes (and cube-like puzzles)
+    </p>
+    <p>
+      <b>legend:</b> ⭐ main, 🏢 desk toy, 🏫 teaching/giveaway, 🛠️ magnet
+      modded, 💕 wife collection, 🆘 dead
+    </p>
+  </header>
+  <main></main>
+</div>
+<script>
+  const cubes = [
+    // 2⨯2
+    {
+      name: "YJ MGC2 Elite",
+      link: "https://speedcubeshop.com/products/yj-mgc-elite-magnetic-2x2?variant=31761652220017",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/YJ-MGC-Elite-Magnetic-2x2-Stickerless-Bright-3_4efffc6e-4c08-44c3-a844-1ce34cd67703.jpg?v=1640234517",
+      type: "2⨯2",
+      tags: "⭐",
+    },
+    {
+      name: "DaYan TengYun M",
+      link: "https://speedcubeshop.com/products/dayan-tengyun-m-2x2?variant=30246428344433",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/DaYan-TengYun-M-2x2-Stickerless-Bright_d4a386a4-701b-442c-86df-bda8184c3a39.jpg?v=1637461008",
+      type: "2⨯2",
+      tags: "🏢",
+    },
+    {
+      name: "Rubik's Mini (c. 2015)",
+      link: "https://www.target.com/p/rubik-39-s-mini/-/A-17471257",
+      image:
+        "https://media.gamestop.com/i/gamestop/11204668/Spin-Master-Rubiks-Mini-2x2-Cube?$pdp2x$",
+      type: "2⨯2",
+      tags: "💕",
+    },
+    // 3⨯3
+    {
+      name: "GAN 12 MagLev",
+      link: "https://speedcubeshop.com/products/gan-12-m-3x3?_pos=1&_sid=ec9362e19&_ss=r&variant=39570777636977",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-12-M-3x3-6.jpg?v=1634277655",
+      type: "3⨯3",
+      tags: "⭐",
+    },
+    {
+      name: "X-Man Tornado V2",
+      link: "https://speedcubeshop.com/products/x-man-tornado-v2-magnetic-3x3?_pos=2&_sid=46760f633&_ss=r&variant=39359977685105#images-1",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/X-Man-Tornado-V2-3x3-Magnetic-Stickerless-Bright.jpg?v=1631340129",
+      type: "3⨯3",
+      tags: "💕⭐",
+    },
+    {
+      name: "DaYan TengYun V2 M",
+      link: "https://speedcubeshop.com/products/dayan-tengyun-magnetic-3x3-v2?_pos=1&_sid=9dee78b4c&_ss=r&variant=31492126802033#images-1",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/DaYan-TengYun-Magnetic-3x3-V2-Stickerless-Bright_d1341aae-71c7-4530-ab41-d298ac13fcf8.jpg?v=1628752142",
+      type: "3⨯3",
+      tags: "🏢",
+    },
+    {
+      name: "QiYi Warrior S",
+      link: "https://www.thecubicle.com/products/qiyi-warrior-s-3x3",
+      image:
+        "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/mCnAXUcP119r3_1024x1024@2x.jpg?v=1581458322",
+      type: "3⨯3",
+      tags: "🏫",
+    },
+    {
+      name: "DaYan ZhanChi (c. 2015)",
+      link: "#",
+      image: "https://m.media-amazon.com/images/I/51mjTGRCKKL._AC_SX466_.jpg",
+      type: "3⨯3",
+      tags: "",
+    },
+    {
+      name: "DaYan Mini ZhanChi (c. 2015)",
+      link: "#",
+      image: "https://m.media-amazon.com/images/I/51mjTGRCKKL._AC_SX466_.jpg",
+      type: "3⨯3",
+      tags: "💕",
+    },
+    {
+      name: "Rubik's Cube (c. 2015)",
+      link: "#",
+      image:
+        "https://lh5.googleusercontent.com/-FGadfV_73Ts/VNC35lc239I/AAAAAAAAIhA/KMM73mK97vY/s1600/15-01-15-561RubiksCube.jpg",
+      type: "3⨯3",
+      tags: "",
+    },
+    {
+      name: "GAN 330 (Magnetized)",
+      link: "https://speedcubeshop.com/products/gan-330-3x3-keychain?variant=31629726253169",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-330-3x3-Keychain-Stickerless-Bright-6.jpg?v=1647572731",
+      type: "3⨯3",
+      tags: '🛠️ <a href="https://www.thecubicle.com/collections/accessories/products/cubicle-labs-3x3-magnet-kit-lite">(kit)</a>',
+    },
+    {
+      name: "GAN 330",
+      link: "https://speedcubeshop.com/products/gan-330-3x3-keychain?variant=31629726253169",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-330-3x3-Keychain-Stickerless-Bright-2_495a7073-6840-425f-b12b-da9b643b9c1b.jpg?v=1628752392",
+      type: "3⨯3",
+      tags: "",
+    },
+    // 4x4
+    {
+      name: "MoYu AoSu WR M",
+      link: "https://speedcubeshop.com/products/moyu-aosu-wr-m-4x4?_pos=1&_sid=917e42cbc&_ss=r&variant=29651899056241",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/MoYu-AoSu-WR-M-4x4-7.jpg?v=1647572544",
+      type: "4⨯4",
+      tags: "⭐",
+    },
+    {
+      name: "MoYu MeiLong (c. 2015)",
+      link: "https://speedcubeshop.com/products/mofang-jiaoshi-meilong-4x4?_pos=4&_sid=037389a1d&_ss=r&variant=29160899969137#images-1",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/MoFang-JiaoShi-MeiLong-4x4-Stickerless-Bright_e2b7ba11-8f7e-4a6c-8cd8-59988d87429d.jpg?v=1637460832",
+      type: "4⨯4",
+      tags: "💕",
+    },
+    // 5x5
+    {
+      name: "QiYi Valk 5 M",
+      link: "https://speedcubeshop.com/products/qiyi-valk-5-m-5x5?_pos=1&_sid=5b49d7689&_ss=r&variant=29228068044913",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/QiYi-Valk-5-M-5x5-2_d0400565-27f5-4e16-8763-fd81269f62e7.jpg?v=1637460852",
+      type: "5⨯5",
+      tags: "⭐",
+    },
+    {
+      name: "QiYi/Z Carbon Fiber",
+      link: "https://speedcubeshop.com/products/z-carbon-fiber-5x5?_pos=1&_sid=de05edc1e&_ss=r&variant=30794412626",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/Z-Carbon-Fiber-5x5-Stickerless-Carbon-Fiber_9c24285c-2bd6-4de7-9c6f-853fa4b05b0d.jpg?v=1637459952",
+      type: "5⨯5",
+      tags: "🏢",
+    },
+    {
+      name: "Rubik's Professor (c. 2015)",
+      link: "https://www.amazon.com/Professor-Professors-Colour-Matching-Complex-Problem-Solving/dp/B092W9G6B7",
+      image: "https://m.media-amazon.com/images/I/71IwJt+PiqL._AC_SX466_.jpg",
+      type: "5⨯5",
+      tags: "🆘",
+    },
+    // Pyraminx
+    {
+      name: "GAN Pyraminx M Enhanced",
+      link: "https://speedcubeshop.com/products/gan-magnetic-pyraminx-enhanced?variant=39515463516273",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-Magnetic-Pyraminx-Enhanced-4.jpg?v=1631340066",
+      type: "Pyraminx",
+      tags: "⭐",
+    },
+    {
+      name: "GAN Pyraminx M Standard",
+      link: "https://speedcubeshop.com/products/gan-magnetic-pyraminx-standard?_pos=1&_sid=9f54636c0&_ss=r&variant=32008022655089",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-Magnetic-Pyraminx-Standard-Stickerless-Bright_ee10caa3-eafb-4374-af34-7eeeba1a377d.jpg?v=1628835508",
+      type: "Pyraminx",
+      tags: "🏢",
+    },
+    // Mirror Cubes
+    {
+      name: "GAN Mirror M",
+      link: "https://speedcubeshop.com/products/gan-mirror-magnetic?_pos=1&_sid=04535c5dc&_ss=r&variant=39711300386929",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/GAN-Mirror-Magnetic-Purple.jpg?v=1649484274",
+      type: "3⨯3 Mirror",
+      tags: "⭐",
+    },
+    {
+      name: "ShengShou Mirror Blocks",
+      link: "https://speedcubeshop.com/products/shengshou-mirror-blocks?_pos=3&_sid=f58184e34&_ss=r&variant=5692097221",
+      image:
+        "https://cdn.shopify.com/s/files/1/0978/8602/products/ShengShou-Mirror-Blocks-Black-Gold-Stickers_832307e0-4c8f-4496-b522-3202be2d48d4.jpeg?v=1628747971",
+      type: "3⨯3 Mirror",
+      tags: "🏢",
+    },
+  ];
+
+  const cubeList = document.querySelector("main");
+
+  const insertCubes = () => {
+    cubes.forEach((cube) => {
+      const cubeEl = document.createElement("div");
+      cubeEl.classList.add("cube");
+      cubeEl.innerHTML = `
+        <a class="cube-image" href="${cube.link}" style="background-image: url(${cube.image})">
+        </a>
+        <div class="cube-info">
+          <b>${cube.name}</b><br />
+          ${cube.tags} ${cube.type} 
+        </div>
+      `;
+      cubeList.appendChild(cubeEl);
+    });
+  };
+
+  (() => {
+    insertCubes();
+  })();
+</script>
