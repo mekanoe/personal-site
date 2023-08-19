@@ -1,0 +1,12 @@
+.background {
+  background: linear-gradient(0deg, #3f7cd8 0%, #1632ce 100%) no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  line-height: 1.6;
+}
+

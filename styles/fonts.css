@@ -1,0 +1,16 @@
+body {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-variant-ligatures: normal;
+}
+
+.f-a {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.f-s {
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.f-f {
+  font-family: 'Fira Code', monospace;
+}

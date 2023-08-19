@@ -1,0 +1,21 @@
+.logo {
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+  display: block;
+  width: 150%;
+  text-align: center;
+  line-height: 1;
+}
+
+.logo .part1 {
+  letter-spacing: -0.2rem;
+}
+
+.logo .part2 {
+  /* background-color: black; */
+  padding: 0.1rem 0.5rem;
+  border-top: 1px white solid;
+  position: relative;
+  top: -0.6rem;
+}

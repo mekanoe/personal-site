@@ -1,0 +1,64 @@
+.cube-root {
+  transform: 
+    rotateX(45deg) 
+    rotateZ(225deg) 
+    skew(-10deg, -10deg)
+  ;
+  transform-style: preserve-3d;
+  position: relative;
+  top: calc(var(--size) * 0.5);
+  background-color: rgba(0,0,0,0.15);
+  margin-right: calc(var(--size) * 0.5);
+  --size: 100px;
+}
+
+.cube, .cube:before, .cube:after {
+  width: var(--size);
+  height: var(--size);
+  content: "";
+  position: absolute;
+  float: left;
+  box-shadow: inset 0 0 0.4em 2px rgba(31, 31, 31, 0.11);
+  border: solid rgba(0,0,0,0.6);
+  border-width: 2px 0 0 2px;
+  box-sizing: border-box;
+}
+
+.cube {
+  position: relative;
+  transform: translateZ(calc(var(--size) * 0.15));
+  transform-style: preserve-3d;
+  background-color: var(--floor);
+}
+.cube::after {
+  transform: rotateX(-90deg) translateY(5px);
+  transform-origin: 0% 100%;
+  z-index: -1;
+  background-color: var(--left-wall);
+}
+.cube::before {
+  transform: rotateY(90deg) translateX(5px);
+  transform-origin: 100% 0;
+  z-index: -1;
+  background-color: var(--right-wall);
+}
+
+.cube-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(var(--size));
+  height: calc(var(--size));
+  transform: 
+    skew(10deg, 10deg)
+    rotateZ(90deg) 
+    rotateX(-90deg) 
+    rotateY(-45deg) 
+    translateY(calc(var(--size) * -0.5))
+  ;
+  /* transform-origin: bottom; */
+  transform-style: preserve-3d;
+  z-index: 2;
+}
