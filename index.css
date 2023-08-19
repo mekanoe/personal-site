@@ -16,6 +16,30 @@
   --right-wall: #a68684;
 }
 
+.type2 {
+  --floor: #424142;
+  --left-wall: #6b323c;
+  --right-wall: #4d1818;
+}
+
+.type3 {
+  --floor: #a8a8a8;
+  --left-wall: #c9bc91;
+  --right-wall: #887c55;
+}
+
+.type4 {
+  --floor: #a24fc4;
+  --left-wall: #9900ff;
+  --right-wall: #800085;
+}
+
+.type5 {
+  --floor: #ff009d;
+  --left-wall: #ff48b9;
+  --right-wall: #b60070;
+}
+
 .monster-text {
   color: limegreen
 }
