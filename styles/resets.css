@@ -12,3 +12,7 @@ code {
   font-family: "Fira Code", "Fira Mono", monospace;
   white-space: normal;
 }
+
+ul {
+  margin: 0;
+}

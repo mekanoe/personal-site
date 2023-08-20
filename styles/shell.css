@@ -10,3 +10,20 @@
   line-height: 1.6;
 }
 
+main {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer a {
+  color: rgb(0, 75, 56);
+  transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+}

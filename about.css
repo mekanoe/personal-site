@@ -1,0 +1,96 @@
+@import url("styles/fonts.css");
+@import url("styles/resets.css");
+@import url("styles/shell.css");
+@import url("styles/cube.css");
+@import url("styles/logo.css");
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 97vw;
+  max-width: 1400px;
+  color: white;
+  margin: 0 auto;
+  line-height: 1.8;
+  margin-top: 3em;
+}
+
+.content a {
+  color: gold;
+}
+
+.contained-logo {
+  display: inline-block;
+  font-size: 1em;
+  width: unset;
+  position: relative;
+  top: 1rem;
+}
+
+.contained-logo .part2 {
+  top: -0.4em;
+}
+
+
+section {
+  margin-bottom: 3em;
+  flex: 2;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.profile {
+  flex: 1;
+  width: 400px;
+  background: linear-gradient(0deg, #585c63 0%, #313238 100%) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.5rem;
+  border: 2px solid #313238;
+}
+
+.profile a {
+  color: lightblue;
+}
+
+.profile .head {
+  font-size: 1.4em;
+}
+
+.stylized {
+  overflow: none;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transform: rotate(-1deg);
+  border: white solid;
+  border-width: 1px 0;
+  line-height: 0.8;
+}
+
+.stylized-text {
+  transform: rotate(1deg);
+  padding: 0 1em;
+}
+
+.head {
+  display: flex;
+  flex: 0;
+}
+
+.data {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-top: 1em;
+}
+
+.data th {
+  text-align: right;
+  padding: 0.15em 1em;
+}
